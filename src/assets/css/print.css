@@ -1,0 +1,63 @@
+@media print {
+    .body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 50px;
+    }
+
+    .header__title {
+        color: black;
+    }
+
+
+    .footer,
+    .nav,
+    .table__head .table__row > .table__cell:nth-child(5),
+    .table__head .table__row > .table__cell:nth-child(7),
+    .table__body .table__row:nth-child(1) > .table__cell:nth-child(5),
+    .table__body .table__row:nth-child(1) > .table__cell:nth-child(7) {
+        display: none;
+    }
+
+    .thumbnails__text, .thumbnails__size {
+        opacity: 0.8;
+        color: black;
+        border-color: aliceblue;
+    }
+
+    .thumbnails__image {
+        width: 99%;
+        height: 99%;
+    }
+
+    .table__container {
+        width: unset;
+    }
+
+    .table {
+        overflow: hidden;
+        font-size: 16px;
+    }
+
+    .table__cell {
+        padding: 8px;
+        border: 3px solid black;
+        color: black;
+        text-align: center;
+    }
+
+    .main__container {
+        margin: 0;
+    }
+
+    .news__acronym, .news__link {
+        color: black;
+        text-decoration: none;
+    }
+
+
+
+    a::after {
+        content: " (" attr(href) ")";
+        font-size: smaller;
+    }
+}
